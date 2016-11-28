@@ -1,0 +1,14 @@
+$bg-color : #6bd43c;
+
+body {
+    background-color: $bg-color;
+    display: -ms-flexbox;
+    display: flex;
+    
+    h1 {
+        font-size: 50px;
+        color: firebrick;
+        text-align: center;
+        text-transform: uppercase
+    }
+}

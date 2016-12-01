@@ -1,13 +1,14 @@
 * {
   box-sizing: border-box; }
 
-body * ::-moz-selection {
-  background-color: #c5fff6;
-  padding: 2px 0; }
-
-body * ::selection {
-  background-color: #c5fff6;
-  padding: 2px 0; }
+body {
+  position: relative; }
+  body * ::-moz-selection {
+    background-color: #c5fff6;
+    padding: 2px 0; }
+  body * ::selection {
+    background-color: #c5fff6;
+    padding: 2px 0; }
 
 .bold {
   font-weight: bold; }
@@ -65,9 +66,26 @@ ul {
 
 .navbar {
   border-radius: 0;
-  margin-bottom: 0;
-  margin-top: -15px;
-  padding: 10px 0; }
+  margin-bottom: 0; }
+
+.navbar-inverse .navbar-nav > li {
+  border-right: 3px solid #3f3f3f;
+  -webkit-transform: skew(-9deg);
+          transform: skew(-9deg); }
+
+.navbar-inverse .navbar-nav > li:last-of-type {
+  border-right: none; }
+
+.navbar-inverse .navbar-nav > li > a {
+  padding: 20px 10px;
+  -webkit-transform: skew(9deg);
+          transform: skew(9deg); }
+
+.navbar-inverse .navbar-nav > .active {
+  background-color: #080808; }
+
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:focus, .navbar-inverse .navbar-nav > .active > a:hover {
+  background-color: transparent; }
 
 .scroll-meter {
   position: fixed;
@@ -572,7 +590,7 @@ ul {
   border: 1px solid #eee; }
   #contact .form-wrapper form input, #contact .form-wrapper form textarea {
     /*border: 1px solid #eee;
-            padding: 15px 10px*/
+        padding: 15px 10px*/
     background-color: none;
     border: none;
     border-radius: 0;
@@ -588,7 +606,7 @@ ul {
 
 footer {
   padding: 20px 0;
-  background-color: #351c14;
+  background-color: #070303;
   color: #eee; }
 
 @-webkit-keyframes flash {

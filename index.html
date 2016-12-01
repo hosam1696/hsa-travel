@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="Quiz">
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -11,611 +11,611 @@
     <link rel="stylesheet" href="src/css/bootstrap.min.css">
     <link rel="stylesheet" href="src/css/style.css"> </head>
 
-<body>
-    <!--     clip Path svg -->
-    <svg width="0" height="0">
-        <defs>
-            <clipPath id="clip-shape" clipPathUnits="objectBoundingBox">
-                <polygon points="0 0,0.25 0, 0.75 1, 0 1" /> </clipPath>
-        </defs>
-    </svg>
-    <!--   Top Scroll Meter   -->
-    <div class="scroll-meter">
-        <div class="meter"></div>
+<body data-spy="scroll" data-target="#navbar-spy" data-offset="70">
+<!--     clip Path svg -->
+<svg width="0" height="0">
+    <defs>
+        <clipPath id="clip-shape" clipPathUnits="objectBoundingBox">
+            <polygon points="0 0,0.25 0, 0.75 1, 0 1" /> </clipPath>
+    </defs>
+</svg>
+<!--   Top Scroll Meter   -->
+<div class="scroll-meter">
+    <div class="meter"></div>
+</div>
+<!--    Top Nav -->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> <img class="navbar-brand" src="src/img/log.png" alt="travelCompany"> </div>
+    <div id="navbar-spy" class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav pull-right ">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#services">Our services</a></li>
+            <li><a href="#pachage">our Adventures</a></li>
+            <li><a href="#tour">Tour Guides</a></li>
+            <li><a href="#events">our Events</a></li>
+            <li><a href="#clients">Testimonial</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
     </div>
-    <!--    Top Nav -->
-    <nav class="navbar navbar-inverse">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> <img class="navbar-brand" src="src/img/log.png" alt="travelCompany"> </div>
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav pull-right">
-                <li><a href="">Home</a></li>
-                <li><a href="">Our services</a></li>
-                <li><a href="">our Adventures</a></li>
-                <li><a href="">our Events</a></li>
-                <li><a href="">Tour Guides</a></li>
-                <li><a href="">Testimonial</a></li>
-                <li><a href="">Contact Us</a></li>
-            </ul>
-        </div>
-    </nav>
-    <!--    hero section -->
-    <header id="hero">
-        <div class="overlay"></div>
-        <div class="hero-content">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 col-md-offset-3">
-                        <h1>Awesome &amp; Creative</h1>
-                        <h1 class="or">Tepmlate</h1>
-                        <div class="separator">⟣-⟡--⟡--⟡--⟡-⟢</div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea cupiditate sapiente ipsam possimus enim reprehenderit neque nam nostrum, officia minima vero harum excepturi distinctio autem repudiandae, dolor alias rem nisi.</p>
-                        <button class="btn btn-lg btn-success">Explore More</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-    
-<!--    Services section-->
-    <section id="services" class="">
+</nav>
+<!--    hero section -->
+<header id="hero">
+    <div class="overlay"></div>
+    <div class="hero-content">
         <div class="container">
-            <div class="section-title service-title">
-                <div class="row">
-                    <div class="col-md-offset-2 col-md-8">
-                        <h1 class="text-center">Our Great Services</h1>
-                        <div class="separator">
-                            <div class="sep"></div>
-                        </div>
-                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse cumque fugit, deserunt eveniet, quasi dignissimos voluptas! Facilis excepturi, exercitationem eaque. Accusantium enim eaque dignissimos similique, corporis doloremque nemo quia beatae.</p>
-                    </div>
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3">
+                    <h1>Awesome &amp; Creative</h1>
+                    <h1 class="or">Tepmlate</h1>
+                    <div class="separator">⟣-⟡--⟡--⟡--⟡-⟢</div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea cupiditate sapiente ipsam possimus enim reprehenderit neque nam nostrum, officia minima vero harum excepturi distinctio autem repudiandae, dolor alias rem nisi.</p>
+                    <button class="btn btn-lg btn-success">Explore More</button>
                 </div>
             </div>
         </div>
-        <div class="section-all services-all">
-            <div class="container">
-                <div class="row">
-                    <ul class="ul">
-                        <li class="col-md-3 active"  data-target = ".row1">
-                             
-                               <i class="fa fa-plane fa-2x"></i>
-                                <br>
-                                <p>Airline Tickets</p>
-                           
-                        </li>
-                        <li class="col-md-3"  data-target = ".row2">
-                            
-                               <i class="fa fa-globe fa-2x" ></i>
-                                <br>
-                                <p>Worldwide Tours</p>
-                            
-                        </li>
-                        <li class="col-md-3"  data-target = ".row3">
-                             
-                               <i class="fa fa-bank fa-2x"></i>
-                                <br>
-                                <p>Hotel Reservation</p>
-                            
-                        </li>
-                        <li class="col-md-3" data-target = ".row4">
-                            
-                               <i class="fa fa-heartbeat fa-2x"></i>
-                                <br>
-                                <p>Medical Tours</p>
-                            
-                        </li>
+    </div>
+</header>
+
+<!--    Services section-->
+<section id="services" class="">
+    <div class="container">
+        <div class="section-title service-title">
+            <div class="row">
+                <div class="col-md-offset-2 col-md-8">
+                    <h1 class="text-center">Our Great Services</h1>
+                    <div class="separator">
+                        <div class="sep"></div>
+                    </div>
+                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse cumque fugit, deserunt eveniet, quasi dignissimos voluptas! Facilis excepturi, exercitationem eaque. Accusantium enim eaque dignissimos similique, corporis doloremque nemo quia beatae.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section-all services-all">
+        <div class="container">
+            <div class="row">
+                <ul class="ul">
+                    <li class="col-md-3 active"  data-target = ".row1">
+
+                        <i class="fa fa-plane fa-2x"></i>
+                        <br>
+                        <p>Airline Tickets</p>
+
+                    </li>
+                    <li class="col-md-3"  data-target = ".row2">
+
+                        <i class="fa fa-globe fa-2x" ></i>
+                        <br>
+                        <p>Worldwide Tours</p>
+
+                    </li>
+                    <li class="col-md-3"  data-target = ".row3">
+
+                        <i class="fa fa-bank fa-2x"></i>
+                        <br>
+                        <p>Hotel Reservation</p>
+
+                    </li>
+                    <li class="col-md-3" data-target = ".row4">
+
+                        <i class="fa fa-heartbeat fa-2x"></i>
+                        <br>
+                        <p>Medical Tours</p>
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="service-content">
+        <div class="container">
+            <div class="row row1 active">
+                <div class="col-md-8 sec-padd">
+                    <h3 class="bold service-heading">Airline Tickets</h3>
+                    <p class="text-muted">Duis ac adipiscing risus. Fusce posuere hendrerit velit sit amet scelerisque. Fusce ac nulla mauris. In accumsan eget sapien ut aliquet. Nunc pellentesque nisl at ante fermentum porta. Vestibulum dapibus sed leo nec condimentum.</p>
+                    <ul>
+                        <li>Nam sit amet eros vel nunc pharetra imperdiet.</li>
+                        <li>Nam sit amet eros vel nunc pharetra imperdiet.</li>
+                        <li>Nam sit amet eros vel nunc pharetra imperdiet.</li>
+                        <li>Nam sit amet eros vel nunc pharetra imperdiet.</li>
+                        <li>Nam sit amet eros vel nunc pharetra imperdiet.</li>
                     </ul>
                 </div>
+                <div class="col-md-4">
+                    <img src="src/img/img-2.jpg" alt="" class="img-responsive img-thumbnail">
+                </div>
             </div>
-        </div>
-        <div class="service-content">
-            <div class="container">
-                <div class="row row1 active">
-                    <div class="col-md-8 sec-padd">
-                        <h3 class="bold service-heading">Airline Tickets</h3>
-                        <p class="text-muted">Duis ac adipiscing risus. Fusce posuere hendrerit velit sit amet scelerisque. Fusce ac nulla mauris. In accumsan eget sapien ut aliquet. Nunc pellentesque nisl at ante fermentum porta. Vestibulum dapibus sed leo nec condimentum.</p>
-                        <ul>
-                            <li>Nam sit amet eros vel nunc pharetra imperdiet.</li>
-                            <li>Nam sit amet eros vel nunc pharetra imperdiet.</li>
-                            <li>Nam sit amet eros vel nunc pharetra imperdiet.</li>
-                            <li>Nam sit amet eros vel nunc pharetra imperdiet.</li>
-                            <li>Nam sit amet eros vel nunc pharetra imperdiet.</li>
-                        </ul>
-                    </div>
-                    <div class="col-md-4">
-                        <img src="src/img/img-2.jpg" alt="" class="img-responsive img-thumbnail">
-                    </div>
+            <div class="row row2">
+                <div class="col-md-8 sec-padd ">
+                    <h3 class="bold service-heading">WorldWide Tour</h3>
+                    <p class="text-muted">Duis ac adipiscing risus. Fusce posuere hendrerit velit sit amet scelerisque. Fusce ac nulla mauris. In accumsan eget sapien ut aliquet. Nunc pellentesque nisl at ante fermentum porta. Vestibulum dapibus sed leo nec condimentum.</p>
+                    <ul>
+                        <li>Nam sit amet eros vel nunc pharetra imperdiet.</li>
+                        <li>Nam sit amet eros vel nunc pharetra imperdiet.</li>
+                        <li>Nam sit amet eros vel nunc pharetra imperdiet.</li>
+                        <li>Nam sit amet eros vel nunc pharetra imperdiet.</li>
+                        <li>Nam sit amet eros vel nunc pharetra imperdiet.</li>
+                    </ul>
                 </div>
-                <div class="row row2">
-                    <div class="col-md-8 sec-padd ">
-                        <h3 class="bold service-heading">WorldWide Tour</h3>
-                        <p class="text-muted">Duis ac adipiscing risus. Fusce posuere hendrerit velit sit amet scelerisque. Fusce ac nulla mauris. In accumsan eget sapien ut aliquet. Nunc pellentesque nisl at ante fermentum porta. Vestibulum dapibus sed leo nec condimentum.</p>
-                        <ul>
-                            <li>Nam sit amet eros vel nunc pharetra imperdiet.</li>
-                            <li>Nam sit amet eros vel nunc pharetra imperdiet.</li>
-                            <li>Nam sit amet eros vel nunc pharetra imperdiet.</li>
-                            <li>Nam sit amet eros vel nunc pharetra imperdiet.</li>
-                            <li>Nam sit amet eros vel nunc pharetra imperdiet.</li>
-                        </ul>
-                    </div>
-                    <div class="col-md-4">
-                        <img src="src/img/img-2.jpg" alt="" class="img-responsive img-thumbnail">
-                    </div>
+                <div class="col-md-4">
+                    <img src="src/img/img-2.jpg" alt="" class="img-responsive img-thumbnail">
                 </div>
-                <div class="row row3">
-                    <div class="col-md-8 sec-padd">
-                        <h3 class="bold service-heading">Hotel Reservation</h3>
-                        <p class="text-muted">Duis ac adipiscing risus. Fusce posuere hendrerit velit sit amet scelerisque. Fusce ac nulla mauris. In accumsan eget sapien ut aliquet. Nunc pellentesque nisl at ante fermentum porta. Vestibulum dapibus sed leo nec condimentum.</p>
-                        <ul>
-                            <li>Nam sit amet eros vel nunc pharetra imperdiet.</li>
-                            <li>Nam sit amet eros vel nunc pharetra imperdiet.</li>
-                            <li>Nam sit amet eros vel nunc pharetra imperdiet.</li>
-                            <li>Nam sit amet eros vel nunc pharetra imperdiet.</li>
-                            <li>Nam sit amet eros vel nunc pharetra imperdiet.</li>
-                        </ul>
-                    </div>
-                    <div class="col-md-4">
-                        <img src="src/img/img-2.jpg" alt="" class="img-responsive img-thumbnail">
-                    </div>
+            </div>
+            <div class="row row3">
+                <div class="col-md-8 sec-padd">
+                    <h3 class="bold service-heading">Hotel Reservation</h3>
+                    <p class="text-muted">Duis ac adipiscing risus. Fusce posuere hendrerit velit sit amet scelerisque. Fusce ac nulla mauris. In accumsan eget sapien ut aliquet. Nunc pellentesque nisl at ante fermentum porta. Vestibulum dapibus sed leo nec condimentum.</p>
+                    <ul>
+                        <li>Nam sit amet eros vel nunc pharetra imperdiet.</li>
+                        <li>Nam sit amet eros vel nunc pharetra imperdiet.</li>
+                        <li>Nam sit amet eros vel nunc pharetra imperdiet.</li>
+                        <li>Nam sit amet eros vel nunc pharetra imperdiet.</li>
+                        <li>Nam sit amet eros vel nunc pharetra imperdiet.</li>
+                    </ul>
                 </div>
-                <div class="row row4">
-                    <div class="col-md-8 sec-padd">
-                        <h3 class="bold service-heading">medical Tour</h3>
-                        <p class="text-muted">Duis ac adipiscing risus. Fusce posuere hendrerit velit sit amet scelerisque. Fusce ac nulla mauris. In accumsan eget sapien ut aliquet. Nunc pellentesque nisl at ante fermentum porta. Vestibulum dapibus sed leo nec condimentum.</p>
-                        <ul>
-                            <li>Nam sit amet eros vel nunc pharetra imperdiet.</li>
-                            <li>Nam sit amet eros vel nunc pharetra imperdiet.</li>
-                            <li>Nam sit amet eros vel nunc pharetra imperdiet.</li>
-                            <li>Nam sit amet eros vel nunc pharetra imperdiet.</li>
-                            <li>Nam sit amet eros vel nunc pharetra imperdiet.</li>
-                        </ul>
-                    </div>
-                    <div class="col-md-4">
-                        <img src="src/img/logo.png" alt="" class="img-responsive img-thumbnail">
-                    </div>
+                <div class="col-md-4">
+                    <img src="src/img/img-2.jpg" alt="" class="img-responsive img-thumbnail">
+                </div>
+            </div>
+            <div class="row row4">
+                <div class="col-md-8 sec-padd">
+                    <h3 class="bold service-heading">medical Tour</h3>
+                    <p class="text-muted">Duis ac adipiscing risus. Fusce posuere hendrerit velit sit amet scelerisque. Fusce ac nulla mauris. In accumsan eget sapien ut aliquet. Nunc pellentesque nisl at ante fermentum porta. Vestibulum dapibus sed leo nec condimentum.</p>
+                    <ul>
+                        <li>Nam sit amet eros vel nunc pharetra imperdiet.</li>
+                        <li>Nam sit amet eros vel nunc pharetra imperdiet.</li>
+                        <li>Nam sit amet eros vel nunc pharetra imperdiet.</li>
+                        <li>Nam sit amet eros vel nunc pharetra imperdiet.</li>
+                        <li>Nam sit amet eros vel nunc pharetra imperdiet.</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <img src="src/img/logo.png" alt="" class="img-responsive img-thumbnail">
                 </div>
             </div>
         </div>
-    </section>
-    
-    <!--    Package section-->
-    <section id="pachage" class="">
+    </div>
+</section>
+
+<!--    Package section-->
+<section id="pachage" class="">
+    <div class="container">
+        <div class="section-title service-title">
+            <div class="row">
+                <div class="col-md-offset-2 col-md-8">
+                    <h1 class="text-center">Our Popular package</h1>
+                    <div class="separator">
+                        <div class="sep"></div>
+                    </div>
+                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse cumque fugit, deserunt eveniet, quasi dignissimos voluptas! Facilis excepturi, exercitationem eaque. Accusantium enim eaque dignissimos similique, corporis doloremque nemo quia beatae.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section-all slides">
         <div class="container">
-            <div class="section-title service-title">
-                <div class="row">
-                    <div class="col-md-offset-2 col-md-8">
-                        <h1 class="text-center">Our Popular package</h1>
-                        <div class="separator">
-                            <div class="sep"></div>
-                        </div>
-                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse cumque fugit, deserunt eveniet, quasi dignissimos voluptas! Facilis excepturi, exercitationem eaque. Accusantium enim eaque dignissimos similique, corporis doloremque nemo quia beatae.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="section-all slides">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12" id="sw" style="position: relative;overflow: hidden">
-                        <ul class="slides-wrapper">
-                            <li class="slide">
-                                
-                                    <img src="src/img/img-2.jpg" alt="" class="img-responsive">
-                                    <div class="slide-content">
-                                        <h4>HoneyMoon</h4>
-                                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio minus, aliquid fugiat quia earum culpa veniam magnam libero doloremque quos aut, laudantium facere voluptatem ad adipisci molestias beatae? Libero, quaerat!</p>
-                                        <hr>
-                                        <ul class="slide-icons">
-                                            
-                                                <li><i class="fa fa-globe"></i>world wide</li>
-                                                <li><i class="fa fa-calendar"></i>7days</li>
-                                                <li><i class="fa fa-dollar"></i>2500</li>
-                                            
-                                        </ul>
-                                    </div>
-                                
-                            </li>
-                            <li class="slide">
-                                
-                                    <img src="src/img/img-2.jpg" alt="" class="img-responsive">
-                                    <div class="slide-content">
-                                        <h4>HoneyMoon</h4>
-                                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio minus, aliquid fugiat quia earum culpa veniam magnam libero doloremque quos aut, laudantium facere voluptatem ad adipisci molestias beatae? Libero, quaerat!</p>
-                                        <hr>
-                                        <ul class="slide-icons">
-                                            
-                                                <li><i class="fa fa-globe"></i>world wide</li>
-                                                <li><i class="fa fa-calendar"></i>7days</li>
-                                                <li><i class="fa fa-dollar"></i>2500</li>
-                                            
-                                        </ul>
-                                    </div>
-                                
-                            </li>
-                            <li class="slide">
-                                
-                                    <img src="src/img/img-2.jpg" alt="" class="img-responsive">
-                                    <div class="slide-content">
-                                        <h4>HoneyMoon</h4>
-                                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio minus, aliquid fugiat quia earum culpa veniam magnam libero doloremque quos aut, laudantium facere voluptatem ad adipisci molestias beatae? Libero, quaerat!</p>
-                                        <hr>
-                                        <ul class="slide-icons">
-                                            
-                                                <li><i class="fa fa-globe"></i>world wide</li>
-                                                <li><i class="fa fa-calendar"></i>7days</li>
-                                                <li><i class="fa fa-dollar"></i>2500</li>
-                                            
-                                        </ul>
-                                    </div>
-                                
-                            </li>
-                            <li class="slide">
-                                
-                                    <img src="src/img/img-2.jpg" alt="" class="img-responsive">
-                                    <div class="slide-content">
-                                        <h4>HoneyMoon</h4>
-                                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio minus, aliquid fugiat quia earum culpa veniam magnam libero doloremque quos aut, laudantium facere voluptatem ad adipisci molestias beatae? Libero, quaerat!</p>
-                                        <hr>
-                                        <ul class="slide-icons">
-                                            
-                                                <li><i class="fa fa-globe"></i>world wide</li>
-                                                <li><i class="fa fa-calendar"></i>7days</li>
-                                                <li><i class="fa fa-dollar"></i>2500</li>
-                                            
-                                        </ul>
-                                    </div>
-                                
-                            </li>
-                            <li class="slide">
-                                
-                                    <img src="src/img/img-2.jpg" alt="" class="img-responsive">
-                                    <div class="slide-content">
-                                        <h4>HoneyMoon</h4>
-                                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio minus, aliquid fugiat quia earum culpa veniam magnam libero doloremque quos aut, laudantium facere voluptatem ad adipisci molestias beatae? Libero, quaerat!</p>
-                                        <hr>
-                                        <ul class="slide-icons">
-                                            
-                                                <li><i class="fa fa-globe"></i>world wide</li>
-                                                <li><i class="fa fa-calendar"></i>7days</li>
-                                                <li><i class="fa fa-dollar"></i>2500</li>
-                                            
-                                        </ul>
-                                    </div>
-                                
-                            </li>
-                        </ul><!-- slides wrapper -->
-                        <br>
-                        <div class="slides-navigator text-center">
-                            <span id="left"></span>
-                            <span class="selected"></span>
-                            <span id="right"></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    
-<!--    Tour Section   -->
-   <section id="tour">
-       
-           <div class="tour-content">
-               <h2>GREAT EXPERIENCES </h2>
-               <h2 class="or">FOR TRAVELING AND TOURISM</h2>
-               <div class="separator">⟣-⟡--⟡--⟡--⟡-⟢</div>
-<button class="btn btn-lg btn-success">Take Your Tour</button>
-           </div>
-       
-   </section>
-    
-<!--    Adventures Section   -->
-   <section id="advenures" class="">
-        <div class="container">
-            <div class="section-title">
-                <div class="row">
-                    <div class="col-md-offset-2 col-md-8">
-                        <h1 class="text-center">Our Adventures</h1>
-                        <div class="separator">
-                            <div class="sep"></div>
-                        </div>
-                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse cumque fugit, deserunt eveniet, quasi dignissimos voluptas! Facilis excepturi, exercitationem eaque. Accusantium enim eaque dignissimos similique, corporis doloremque nemo quia beatae.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="section-all slides">
-            <div class="container">
-                <div class="row">
-                </div>
-            </div>
-       </div>
-    </section>
-    
-    
-    <!--    Events Section   -->
-   <section id="events" class="">
-        <div class="container">
-            <div class="section-title">
-                <div class="row">
-                    <div class="col-md-offset-2 col-md-8">
-                        <h1 class="text-center">Our Best Events</h1>
-                        <div class="separator">
-                            <div class="sep"></div>
-                        </div>
-                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse cumque fugit, deserunt eveniet, quasi dignissimos voluptas! Facilis excepturi, exercitationem eaque. Accusantium enim eaque dignissimos similique, corporis doloremque nemo quia beatae.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="section-all all-events">
-            <div class="container">
-                <div class="row">
-                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 ">
-                   <div class="single-event">
-                    <div class="content">
-                        <i class="fa fa-globe"></i>
-                        <h4>World Tours</h4>
-                    </div>
-                       <div class="content-overlay">
-                           <h4>World Tours</h4>
-                           <p>Our program is make you enjoy &amp; explore the life. we ‘ll be happy when see you and your family happy.
+            <div class="row">
+                <div class="col-md-12" id="sw" style="position: relative;overflow: hidden">
+                    <ul class="slides-wrapper">
+                        <li class="slide">
 
-</p>
-                       </div>
-                   </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 ">
-                    <div class="single-event">
-                    <div class="content">
-                        <i class="fa fa-plane"></i>
-                        <h4>Airline Tickets</h4>
-                    </div>
-                       <div class="content-overlay">
-                           <h4>Airline Tickets</h4>
-                           <p>Our program is make you enjoy &amp; explore the life. we ‘ll be happy when see you and your family happy.
-
-</p>
-                       </div>
-                   </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 ">
-                    <div class="single-event">
-                    <div class="content">
-                        <i class="fa fa-university"></i>
-                        <h4>Hotel Reservation</h4>
-                    </div>
-                       <div class="content-overlay">
-                           <h4>Hotel resevation</h4>
-                           <p>Our program is make you enjoy &amp; explore the life. we ‘ll be happy when see you and your family happy.
-
-</p>
-                       </div>
-                   </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                    <div class="single-event">
-                    <div class="content">
-                        <i class="fa fa-safari"></i>
-                        <h4>Advamced tours</h4>
-                    </div>
-                       <div class="content-overlay">
-                           <h4>Advamced tours</h4>
-                           <p>Our program is make you enjoy &amp; explore the life. we ‘ll be happy when see you and your family happy.
-
-</p>
-                       </div>
-                   </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                    <div class="single-event">
-                    <div class="content">
-                        <i class="fa fa-heartbeat"></i>
-                        <h4>Medical Tours</h4>
-                    </div>
-                       <div class="content-overlay">
-                           <h4>Medical Tour</h4>
-                           <p>Our program is make you enjoy &amp; explore the life. we ‘ll be happy when see you and your family happy.
-
-</p>
-                       </div>
-                   </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                    <div class="single-event">
-                    <div class="content">
-                        <i class="fa fa-empire"></i>
-                        <h4>Ocean Tour</h4>
-                    </div>
-                       <div class="content-overlay">
-                           <h4>Ocean Tour</h4>
-                           <p>Our program is make you enjoy &amp; explore the life. we ‘ll be happy when see you and your family happy.
-
-</p>
-                       </div>
-                   </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                    <div class="single-event">
-                    <div class="content">
-                        <i class="fa fa-plane"></i>
-                        <h4>Medical Tour</h4>
-                    </div>
-                       <div class="content-overlay">
-                           <h4>Medical Tour</h4>
-                           <p>Our program is make you enjoy &amp; explore the life. we ‘ll be happy when see you and your family happy.
-
-</p>
-                       </div>
-                   </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                    <div class="single-event">
-                    <div class="content">
-                        <i class="fa fa-dribbble"></i>
-                        <h4>Sport Tour</h4>
-                    </div>
-                       <div class="content-overlay">
-                           <h4>Sport Tour</h4>
-                           <p>Our program is make you enjoy &amp; explore the life. we ‘ll be happy when see you and your family happy.
-
-</p>
-                       </div>
-                   </div>
-                </div>
-                </div>
-            </div>
-       </div>
-    </section>
-    
-    
-    <!--    Video Section   -->
-   <section id="video">
-       
-           <div class="tour-content">
-               <h2>GREAT EXPERIENCES </h2>
-               <h2 class="or">FOR TRAVELING AND TOURISM</h2>
-               <div class="separator">⟣-⟡--⟡--⟡--⟡-⟢</div>
-    <a href="">Click the player <i class="fa fa-play"></i> To Watch The overview</a>
-           </div>
-       
-   </section>
-    
-    
-    <!--    TourGuides Section   -->
-   <section id="tourguides" class="">
-        <div class="container">
-            <div class="section-title">
-                <div class="row">
-                    <div class="col-md-offset-2 col-md-8">
-                        <h1 class="text-center">Our TourGuides</h1>
-                        <div class="separator">
-                            <div class="sep"></div>
-                        </div>
-                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse cumque fugit, deserunt eveniet, quasi dignissimos voluptas! Facilis excepturi, exercitationem eaque. Accusantium enim eaque dignissimos similique, corporis doloremque nemo quia beatae.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="section-all slides">
-            <div class="container">
-                <div class="row ">
-                <div class="col-md-4 col-sm-12 tourguides">
-                	<div class="tourguide">
-                		<img src="src/img/p.png" alt="" class="img-responsive">
-                                    <div class="slide-content">
-                                        <h4 ><span class="bold">Ibraham Link</span><span class=" pull-right text-muted">- WEB DEVELOPER</span><div class="clearfix">	</div></h4>
-                                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio minus, aliquid fugiat quia earum culpa veniam magnam libero doloremque quos aut, laudantium facere voluptatem ad adipisci molestias beatae? Libero, quaerat!</p>
-                                        <hr>
-                                        <div class="s-social text-center">
-                                    <a href=""><i class="fa fa-facebook"></a></i>
-                                    <a href=""><i class="fa fa-twitter"></a></i>
-                                    <a href=""><i class="fa fa-google"></a></i>
-                                    <a href=""><i class="fa fa-instagram"></a></i>
-                                </div>
-                                    </div>
-                	</div>
-                </div>
-                <div class="col-md-4 col-sm-12 tourguides">
-                	<div class="tourguide">
-                		<img src="src/img/p.png" alt="" class="img-responsive img-rounded">
-                                    <div class="slide-content">
-                                        <h4 ><span class="bold">HoneyMoon</span><span class=" pull-right text-muted">- CO -Founder</span><div class="clearfix">	</div></h4>
-                                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio minus, aliquid fugiat quia earum culpa veniam magnam libero doloremque quos aut, laudantium facere voluptatem ad adipisci molestias beatae? Libero, quaerat!</p>
-                                        <hr>
-                                        <div class="s-social text-center">
-                                    <a href=""><i class="fa fa-facebook"></a></i>
-                                    <a href=""><i class="fa fa-twitter"></a></i>
-                                    <a href=""><i class="fa fa-google"></a></i>
-                                    <a href=""><i class="fa fa-instagram"></a></i>
-                                </div>
-                                    </div>
-                	</div>
-                </div>
-                <div class="col-md-4 col-sm-12 tourguides">
-                	<div class="tourguide">
-                		<img src="src/img/p.png" alt="" class="img-responsive">
-                                    <div class="slide-content">
-                                        <h4 ><span class="bold">Gerham Alex</span><span class=" pull-right text-muted">- WEB DESIGNER</span><div class="clearfix">	</div></h4>
-                                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio minus, aliquid fugiat quia earum culpa veniam magnam libero doloremque quos aut, laudantium facere voluptatem ad adipisci molestias beatae? Libero, quaerat!</p>
-                                        <hr>
-                                        <div class="s-social text-center">
-                                    <a href=""><i class="fa fa-facebook"></a></i>
-                                    <a href=""><i class="fa fa-twitter"></a></i>
-                                    <a href=""><i class="fa fa-google"></a></i>
-                                    <a href=""><i class="fa fa-instagram"></a></i>
-                                </div>
-                                    </div>
-                	</div>
-                </div>
-                </div>
-            </div>
-       </div>
-    </section>
-    
-    <!--    Clienst Section   -->
-   <section id="advenures" class="">
-        <div class="container">
-            <div class="section-title">
-                <div class="row">
-                    <div class="col-md-offset-2 col-md-8">
-                        <h1 class="text-center">Happy Clients</h1>
-                        <div class="separator">
-                            <div class="sep"></div>
-                        </div>
-                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse cumque fugit, deserunt eveniet, quasi dignissimos voluptas! Facilis excepturi, exercitationem eaque. Accusantium enim eaque dignissimos similique, corporis doloremque nemo quia beatae.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="section-all slides">
-            <div class="container">
-                <div class="row">
-                </div>
-            </div>
-       </div>
-    </section>
-    
-    <!--    Contact Section   -->
-   <section id="contact" class="">
-        <div class="container">
-            <div class="section-title">
-                <div class="row">
-                    <div class="col-md-offset-2 col-md-8">
-                        <h1 class="text-center">Get Connected</h1>
-                        <div class="separator">
-                            <div class="sep"></div>
-                        </div>
-                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse cumque fugit, deserunt eveniet, quasi dignissimos voluptas! Facilis excepturi, exercitationem eaque. Accusantium enim eaque dignissimos similique, corporis doloremque nemo quia beatae.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="section-all">
-            <div class="container">
-                <div class="row">
-                <div class="col-md-6">
-                        <div class="form-wrapper">
-                            <h3 class="text-primary">Keep in touch with our newsleteer</h3><hr>
-                            <form action="">
-                                <div class="form-group">
-                    <label class="text-muted">Your name</label>
-                                <input type="text" class="form-control" placeholder="exapmle: Henry Mickel, Ahmed Mostafa...etc"></div>
-                                <div class="form-group">
-                                <label class="text-muted">Your email</label><input type="email" class="form-control" placeholder="example: youremail@comp.com"></div>
-                                <div class="form-group">
-<label class="text-muted">Your message</label>
-                                <textarea name="" id="" cols="30" rows="10" class="form-control" placeholder="feel free to say what you want"></textarea></div>
+                            <img src="src/img/img-2.jpg" alt="" class="img-responsive">
+                            <div class="slide-content">
+                                <h4>HoneyMoon</h4>
+                                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio minus, aliquid fugiat quia earum culpa veniam magnam libero doloremque quos aut, laudantium facere voluptatem ad adipisci molestias beatae? Libero, quaerat!</p>
                                 <hr>
-                                <button class="btn btn-lg btn-block btn-success">Get in touch</button>
-                            </form>
+                                <ul class="slide-icons">
+
+                                    <li><i class="fa fa-globe"></i>world wide</li>
+                                    <li><i class="fa fa-calendar"></i>7days</li>
+                                    <li><i class="fa fa-dollar"></i>2500</li>
+
+                                </ul>
+                            </div>
+
+                        </li>
+                        <li class="slide">
+
+                            <img src="src/img/img-2.jpg" alt="" class="img-responsive">
+                            <div class="slide-content">
+                                <h4>HoneyMoon</h4>
+                                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio minus, aliquid fugiat quia earum culpa veniam magnam libero doloremque quos aut, laudantium facere voluptatem ad adipisci molestias beatae? Libero, quaerat!</p>
+                                <hr>
+                                <ul class="slide-icons">
+
+                                    <li><i class="fa fa-globe"></i>world wide</li>
+                                    <li><i class="fa fa-calendar"></i>7days</li>
+                                    <li><i class="fa fa-dollar"></i>2500</li>
+
+                                </ul>
+                            </div>
+
+                        </li>
+                        <li class="slide">
+
+                            <img src="src/img/img-2.jpg" alt="" class="img-responsive">
+                            <div class="slide-content">
+                                <h4>HoneyMoon</h4>
+                                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio minus, aliquid fugiat quia earum culpa veniam magnam libero doloremque quos aut, laudantium facere voluptatem ad adipisci molestias beatae? Libero, quaerat!</p>
+                                <hr>
+                                <ul class="slide-icons">
+
+                                    <li><i class="fa fa-globe"></i>world wide</li>
+                                    <li><i class="fa fa-calendar"></i>7days</li>
+                                    <li><i class="fa fa-dollar"></i>2500</li>
+
+                                </ul>
+                            </div>
+
+                        </li>
+                        <li class="slide">
+
+                            <img src="src/img/img-2.jpg" alt="" class="img-responsive">
+                            <div class="slide-content">
+                                <h4>HoneyMoon</h4>
+                                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio minus, aliquid fugiat quia earum culpa veniam magnam libero doloremque quos aut, laudantium facere voluptatem ad adipisci molestias beatae? Libero, quaerat!</p>
+                                <hr>
+                                <ul class="slide-icons">
+
+                                    <li><i class="fa fa-globe"></i>world wide</li>
+                                    <li><i class="fa fa-calendar"></i>7days</li>
+                                    <li><i class="fa fa-dollar"></i>2500</li>
+
+                                </ul>
+                            </div>
+
+                        </li>
+                        <li class="slide">
+
+                            <img src="src/img/img-2.jpg" alt="" class="img-responsive">
+                            <div class="slide-content">
+                                <h4>HoneyMoon</h4>
+                                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio minus, aliquid fugiat quia earum culpa veniam magnam libero doloremque quos aut, laudantium facere voluptatem ad adipisci molestias beatae? Libero, quaerat!</p>
+                                <hr>
+                                <ul class="slide-icons">
+
+                                    <li><i class="fa fa-globe"></i>world wide</li>
+                                    <li><i class="fa fa-calendar"></i>7days</li>
+                                    <li><i class="fa fa-dollar"></i>2500</li>
+
+                                </ul>
+                            </div>
+
+                        </li>
+                    </ul><!-- slides wrapper -->
+                    <br>
+                    <div class="slides-navigator text-center">
+                        <span id="left"></span>
+                        <span class="selected"></span>
+                        <span id="right"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!--    Tour Section   -->
+<section id="tour">
+
+    <div class="tour-content">
+        <h2>GREAT EXPERIENCES </h2>
+        <h2 class="or">FOR TRAVELING AND TOURISM</h2>
+        <div class="separator">⟣-⟡--⟡--⟡--⟡-⟢</div>
+        <button class="btn btn-lg btn-success">Take Your Tour</button>
+    </div>
+
+</section>
+
+<!--    Adventures Section   -->
+<section id="advenures" class="">
+    <div class="container">
+        <div class="section-title">
+            <div class="row">
+                <div class="col-md-offset-2 col-md-8">
+                    <h1 class="text-center">Our Adventures</h1>
+                    <div class="separator">
+                        <div class="sep"></div>
+                    </div>
+                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse cumque fugit, deserunt eveniet, quasi dignissimos voluptas! Facilis excepturi, exercitationem eaque. Accusantium enim eaque dignissimos similique, corporis doloremque nemo quia beatae.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section-all slides">
+        <div class="container">
+            <div class="row">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!--    Events Section   -->
+<section id="events" class="">
+    <div class="container">
+        <div class="section-title">
+            <div class="row">
+                <div class="col-md-offset-2 col-md-8">
+                    <h1 class="text-center">Our Best Events</h1>
+                    <div class="separator">
+                        <div class="sep"></div>
+                    </div>
+                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse cumque fugit, deserunt eveniet, quasi dignissimos voluptas! Facilis excepturi, exercitationem eaque. Accusantium enim eaque dignissimos similique, corporis doloremque nemo quia beatae.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section-all all-events">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 ">
+                    <div class="single-event">
+                        <div class="content">
+                            <i class="fa fa-globe"></i>
+                            <h4>World Tours</h4>
+                        </div>
+                        <div class="content-overlay">
+                            <h4>World Tours</h4>
+                            <p>Our program is make you enjoy &amp; explore the life. we ‘ll be happy when see you and your family happy.
+
+                            </p>
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <div class="contact-details">
-                            <div class="s-details">
-                                <div class="det-wrap">
-                                    <h4>Be In touch</h4><hr>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 ">
+                    <div class="single-event">
+                        <div class="content">
+                            <i class="fa fa-plane"></i>
+                            <h4>Airline Tickets</h4>
+                        </div>
+                        <div class="content-overlay">
+                            <h4>Airline Tickets</h4>
+                            <p>Our program is make you enjoy &amp; explore the life. we ‘ll be happy when see you and your family happy.
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 ">
+                    <div class="single-event">
+                        <div class="content">
+                            <i class="fa fa-university"></i>
+                            <h4>Hotel Reservation</h4>
+                        </div>
+                        <div class="content-overlay">
+                            <h4>Hotel resevation</h4>
+                            <p>Our program is make you enjoy &amp; explore the life. we ‘ll be happy when see you and your family happy.
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                    <div class="single-event">
+                        <div class="content">
+                            <i class="fa fa-safari"></i>
+                            <h4>Advamced tours</h4>
+                        </div>
+                        <div class="content-overlay">
+                            <h4>Advamced tours</h4>
+                            <p>Our program is make you enjoy &amp; explore the life. we ‘ll be happy when see you and your family happy.
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                    <div class="single-event">
+                        <div class="content">
+                            <i class="fa fa-heartbeat"></i>
+                            <h4>Medical Tours</h4>
+                        </div>
+                        <div class="content-overlay">
+                            <h4>Medical Tour</h4>
+                            <p>Our program is make you enjoy &amp; explore the life. we ‘ll be happy when see you and your family happy.
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                    <div class="single-event">
+                        <div class="content">
+                            <i class="fa fa-empire"></i>
+                            <h4>Ocean Tour</h4>
+                        </div>
+                        <div class="content-overlay">
+                            <h4>Ocean Tour</h4>
+                            <p>Our program is make you enjoy &amp; explore the life. we ‘ll be happy when see you and your family happy.
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                    <div class="single-event">
+                        <div class="content">
+                            <i class="fa fa-plane"></i>
+                            <h4>Medical Tour</h4>
+                        </div>
+                        <div class="content-overlay">
+                            <h4>Medical Tour</h4>
+                            <p>Our program is make you enjoy &amp; explore the life. we ‘ll be happy when see you and your family happy.
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                    <div class="single-event">
+                        <div class="content">
+                            <i class="fa fa-dribbble"></i>
+                            <h4>Sport Tour</h4>
+                        </div>
+                        <div class="content-overlay">
+                            <h4>Sport Tour</h4>
+                            <p>Our program is make you enjoy &amp; explore the life. we ‘ll be happy when see you and your family happy.
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!--    Video Section   -->
+<section id="video">
+
+    <div class="tour-content">
+        <h2>GREAT EXPERIENCES </h2>
+        <h2 class="or">FOR TRAVELING AND TOURISM</h2>
+        <div class="separator">⟣-⟡--⟡--⟡--⟡-⟢</div>
+        <a href="">Click the player <i class="fa fa-play"></i> To Watch The overview</a>
+    </div>
+
+</section>
+
+
+<!--    TourGuides Section   -->
+<section id="tourguides" class="">
+    <div class="container">
+        <div class="section-title">
+            <div class="row">
+                <div class="col-md-offset-2 col-md-8">
+                    <h1 class="text-center">Our TourGuides</h1>
+                    <div class="separator">
+                        <div class="sep"></div>
+                    </div>
+                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse cumque fugit, deserunt eveniet, quasi dignissimos voluptas! Facilis excepturi, exercitationem eaque. Accusantium enim eaque dignissimos similique, corporis doloremque nemo quia beatae.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section-all slides">
+        <div class="container">
+            <div class="row ">
+                <div class="col-md-4 col-sm-12 tourguides">
+                    <div class="tourguide">
+                        <img src="src/img/p.png" alt="" class="img-responsive">
+                        <div class="slide-content">
+                            <h4 ><span class="bold">Ibraham Link</span><span class=" pull-right text-muted">- WEB DEVELOPER</span><div class="clearfix">	</div></h4>
+                            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio minus, aliquid fugiat quia earum culpa veniam magnam libero doloremque quos aut, laudantium facere voluptatem ad adipisci molestias beatae? Libero, quaerat!</p>
+                            <hr>
+                            <div class="s-social text-center">
+                                <a href=""><i class="fa fa-facebook"></a></i>
+                                <a href=""><i class="fa fa-twitter"></a></i>
+                                <a href=""><i class="fa fa-google"></a></i>
+                                <a href=""><i class="fa fa-instagram"></a></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12 tourguides">
+                    <div class="tourguide">
+                        <img src="src/img/p.png" alt="" class="img-responsive img-rounded">
+                        <div class="slide-content">
+                            <h4 ><span class="bold">HoneyMoon</span><span class=" pull-right text-muted">- CO -Founder</span><div class="clearfix">	</div></h4>
+                            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio minus, aliquid fugiat quia earum culpa veniam magnam libero doloremque quos aut, laudantium facere voluptatem ad adipisci molestias beatae? Libero, quaerat!</p>
+                            <hr>
+                            <div class="s-social text-center">
+                                <a href=""><i class="fa fa-facebook"></a></i>
+                                <a href=""><i class="fa fa-twitter"></a></i>
+                                <a href=""><i class="fa fa-google"></a></i>
+                                <a href=""><i class="fa fa-instagram"></a></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12 tourguides">
+                    <div class="tourguide">
+                        <img src="src/img/p.png" alt="" class="img-responsive">
+                        <div class="slide-content">
+                            <h4 ><span class="bold">Gerham Alex</span><span class=" pull-right text-muted">- WEB DESIGNER</span><div class="clearfix">	</div></h4>
+                            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio minus, aliquid fugiat quia earum culpa veniam magnam libero doloremque quos aut, laudantium facere voluptatem ad adipisci molestias beatae? Libero, quaerat!</p>
+                            <hr>
+                            <div class="s-social text-center">
+                                <a href=""><i class="fa fa-facebook"></a></i>
+                                <a href=""><i class="fa fa-twitter"></a></i>
+                                <a href=""><i class="fa fa-google"></a></i>
+                                <a href=""><i class="fa fa-instagram"></a></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--    Clienst Section   -->
+<section id="clients" class="">
+    <div class="container">
+        <div class="section-title">
+            <div class="row">
+                <div class="col-md-offset-2 col-md-8">
+                    <h1 class="text-center">Happy Clients</h1>
+                    <div class="separator">
+                        <div class="sep"></div>
+                    </div>
+                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse cumque fugit, deserunt eveniet, quasi dignissimos voluptas! Facilis excepturi, exercitationem eaque. Accusantium enim eaque dignissimos similique, corporis doloremque nemo quia beatae.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section-all slides">
+        <div class="container">
+            <div class="row">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--    Contact Section   -->
+<section id="contact" class="">
+    <div class="container">
+        <div class="section-title">
+            <div class="row">
+                <div class="col-md-offset-2 col-md-8">
+                    <h1 class="text-center">Get Connected</h1>
+                    <div class="separator">
+                        <div class="sep"></div>
+                    </div>
+                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse cumque fugit, deserunt eveniet, quasi dignissimos voluptas! Facilis excepturi, exercitationem eaque. Accusantium enim eaque dignissimos similique, corporis doloremque nemo quia beatae.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section-all">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-wrapper">
+                        <h3 class="text-primary">Keep in touch with our newsleteer</h3><hr>
+                        <form action="">
+                            <div class="form-group">
+                                <label class="text-muted">Your name</label>
+                                <input type="text" class="form-control" placeholder="exapmle: Henry Mickel, Ahmed Mostafa...etc"></div>
+                            <div class="form-group">
+                                <label class="text-muted">Your email</label><input type="email" class="form-control" placeholder="example: youremail@comp.com"></div>
+                            <div class="form-group">
+                                <label class="text-muted">Your message</label>
+                                <textarea name="" id="" cols="30" rows="10" class="form-control" placeholder="feel free to say what you want"></textarea></div>
+                            <hr>
+                            <button class="btn btn-lg btn-block btn-success">Get in touch</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="contact-details">
+                        <div class="s-details">
+                            <div class="det-wrap">
+                                <h4>Be In touch</h4><hr>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit eveniet vero nulla, eaque labore, dolores optio exercitationem fugiat similique laboriosam, iusto enim eligendi sequi quasi dolore. Veritatis accusantium maxime placeat?</p>
                                 <div class="s-social">
                                     <a href=""><i class="fa fa-facebook"></a></i>
@@ -623,62 +623,62 @@
                                     <a href=""><i class="fa fa-google"></a></i>
                                     <a href=""><i class="fa fa-instagram"></a></i>
                                 </div>
-                                </div>
+                            </div>
 
                             <div class="det-wrap">
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <h4>Our Orders</h4><hr>
-                                            <ul>
-                                                <li>
-                                                    <i class="fa fa-globe"></i> 1234 s name. City Name
-                                                </li>
-                                                <li>
-                                                    <i class="fa fa-phone"></i> +4 12345345
-                                                </li>
-                                                <li>
-                                                    <i class="fa fa-envelope"></i> anycompany@email.com
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-md-6 business">
-                                            <h4>BUSINESS HOURS</h4><hr>
-                                            <ul>
-                                                <li>
-                                                    <i class="fa fa-check"></i> Mon. - Fri.8am to 5pm
-                                                </li>
-                                                <li>
-                                                    <i class="fa fa-check"></i> Sat.8am to 11am
-                                                </li>
-                                                <li>
-                                                    <i class="fa fa-check"></i> Sun.Closed
-                                                </li>
-                                            </ul>
-                                        </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <h4>Our Orders</h4><hr>
+                                        <ul>
+                                            <li>
+                                                <i class="fa fa-globe"></i> 1234 s name. City Name
+                                            </li>
+                                            <li>
+                                                <i class="fa fa-phone"></i> +4 12345345
+                                            </li>
+                                            <li>
+                                                <i class="fa fa-envelope"></i> anycompany@email.com
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-6 business">
+                                        <h4>BUSINESS HOURS</h4><hr>
+                                        <ul>
+                                            <li>
+                                                <i class="fa fa-check"></i> Mon. - Fri.8am to 5pm
+                                            </li>
+                                            <li>
+                                                <i class="fa fa-check"></i> Sat.8am to 11am
+                                            </li>
+                                            <li>
+                                                <i class="fa fa-check"></i> Sun.Closed
+                                            </li>
+                                        </ul>
                                     </div>
                                 </div>
-
                             </div>
+
                         </div>
                     </div>
-                    
                 </div>
-            </div>
-       </div>
-    </section>
-    		
-	
-	<footer class="text-center">
-		All Rights Reserved &copy; 2016 	
-	</footer>
-	
 
-    <!--    Lib scripts    -->
-    <script src="src/js/jquery-2.1.3.min.js"></script>
-    <script src="src/js/bootstrap.min.js"></script>
-    <!--<script src="src/js/jquery.nicescroll.min.js"></script>-->
-    <script src="src/js/meter.js"></script>
-    <!--    custom scripts -->
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<footer class="text-center">
+    All Rights Reserved &copy; 2016
+</footer>
+
+
+<!--    Lib scripts    -->
+<script src="src/js/jquery-2.1.3.min.js"></script>
+<script src="src/js/bootstrap.min.js"></script>
+<!--<script src="src/js/jquery.nicescroll.min.js"></script>-->
+<script src="src/js/meter.js"></script>
+<!--    custom scripts -->
 </body>
 
 </html>

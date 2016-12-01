@@ -96,6 +96,7 @@ $black : #101010;
     box-sizing: border-box
 }
 body {
+    position: relative;
     & * ::selection {
             background-color: #c5fff6;
             padding: 2px 0;
@@ -151,10 +152,25 @@ ul {
 .navbar {
     border-radius: 0;
     margin-bottom: 0;
-    margin-top: -15px;
-    padding: 10px 0;
 }
 
+.navbar-inverse .navbar-nav>li {
+    border-right:3px solid #3f3f3f;
+    transform: skew(-9deg);
+}
+.navbar-inverse .navbar-nav>li:last-of-type {
+    border-right: none
+}
+.navbar-inverse .navbar-nav>li>a {
+    padding: 20px 10px;
+    transform: skew(9deg);
+}
+.navbar-inverse .navbar-nav>.active  {
+    background-color: #080808;
+}
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover{
+    background-color: transparent;
+}
 // independeant divs
 
 .scroll-meter {
@@ -699,7 +715,7 @@ border-bottom: 2px solid #888;
 
 footer {
     padding: 20px 0;
-        background-color: #351c14;
+        background-color: #070303;
         color: #eee
 }
 @keyframes flash {

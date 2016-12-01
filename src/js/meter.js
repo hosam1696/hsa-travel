@@ -1,6 +1,22 @@
 $(function() {
    let meterDiv = $('.scroll-meter');
    let scrollside = 0;
+
+   // scroll spy
+   $('body').scrollspy({target: "#navbar-spy"});
+
+   // animate scroll
+    $('.nav li').on('click', 'a', function(e) {
+        e.preventDefault();
+       var href = $(this).attr('href'),
+           targetOffset = $(href).offset().top;
+
+       $('body, html').animate({
+          scrollTop: targetOffset+ 'px'
+       },500);
+
+    });
+
    $(window).on('scroll', function() {
        let topScroll = $(window).scrollTop();
        

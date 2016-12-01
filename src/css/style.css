@@ -39,6 +39,26 @@ ul {
   width: 100%;
   background-color: aquamarine; }
 
+#scroll-btn {
+  position: fixed;
+  display: block;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  bottom: 10px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  background-color: #3c76d4;
+  color: #fff;
+  line-height: 30px;
+  text-align: center;
+  z-index: 999;
+  cursor: pointer; }
+  #scroll-btn.hidden {
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+    bottom: -40px; }
+
 .service-title {
   padding-top: 50px;
   padding-bottom: 50px;
@@ -90,13 +110,13 @@ ul {
 .scroll-meter {
   position: fixed;
   width: 100%;
-  height: 5px;
+  height: 3px;
   background-color: #101010;
-  z-index: 999;
+  z-index: 9999;
   top: 0;
   left: 0; }
   .scroll-meter .meter {
-    width: 0%;
+    width: 0;
     height: 100%;
     background: -webkit-linear-gradient(right, #ea8c0d, #ea5a0d);
     background: linear-gradient(to left, #ea8c0d, #ea5a0d);
@@ -248,7 +268,7 @@ ul {
       overflow: hidden;
       cursor: pointer; }
       #services .services-all ul li:hover:after {
-        bottom: 0px; }
+        bottom: 0; }
       #services .services-all ul li:hover i {
         -webkit-transform: scale(1.1) translateY(-5px);
                 transform: scale(1.1) translateY(-5px); }
@@ -262,7 +282,7 @@ ul {
         background: linear-gradient(#f6f8f9, #f4f4f4); }
       #services .services-all ul li.active:after {
         border-bottom-color: #fcbc47;
-        bottom: 0px; }
+        bottom: 0; }
       #services .services-all ul li:after {
         content: '';
         position: absolute;
@@ -591,7 +611,7 @@ ul {
   #contact .form-wrapper form input, #contact .form-wrapper form textarea {
     /*border: 1px solid #eee;
         padding: 15px 10px*/
-    background-color: none;
+    background-color: transparent;
     border: none;
     border-radius: 0;
     border-bottom: 2px solid #ccc;

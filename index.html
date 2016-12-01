@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="src/css/bootstrap.min.css">
     <link rel="stylesheet" href="src/css/style.css"> </head>
 
-<body data-spy="scroll" data-target="#navbar-spy" data-offset="70">
+<body data-spy="scroll" data-target=".navbar-spy" data-offset="70">
 <!--     clip Path svg -->
 <svg width="0" height="0">
     <defs>
@@ -19,6 +19,11 @@
             <polygon points="0 0,0.25 0, 0.75 1, 0 1" /> </clipPath>
     </defs>
 </svg>
+
+<div id="scroll-btn" class="hidden">
+    <span class="fa fa-arrow-up"></span>
+</div>
+
 <!--   Top Scroll Meter   -->
 <div class="scroll-meter">
     <div class="meter"></div>
@@ -27,7 +32,7 @@
 <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> <img class="navbar-brand" src="src/img/log.png" alt="travelCompany"> </div>
-    <div id="navbar-spy" class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <div class="collapse navbar-collapse navbar-spy" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav pull-right ">
             <li><a href="#hero">Home</a></li>
             <li><a href="#services">Our services</a></li>
@@ -504,7 +509,7 @@
                     <div class="tourguide">
                         <img src="src/img/p.png" alt="" class="img-responsive">
                         <div class="slide-content">
-                            <h4 ><span class="bold">Ibraham Link</span><span class=" pull-right text-muted">- WEB DEVELOPER</span><div class="clearfix">	</div></h4>
+                            <h4 ><span class="bold">Ibraham Link</span><span class=" pull-right text-muted">- WEB DEVELOPER</span></h4><div class="clearfix"></div>
                             <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio minus, aliquid fugiat quia earum culpa veniam magnam libero doloremque quos aut, laudantium facere voluptatem ad adipisci molestias beatae? Libero, quaerat!</p>
                             <hr>
                             <div class="s-social text-center">

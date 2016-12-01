@@ -3,7 +3,7 @@ $(function() {
     let scrollside = 0;
 
     // scroll spy
-    $('body').scrollspy({target: "#navbar-spy"});
+    $('body').scrollspy({target: ".navbar-spy"});
 
     // animate scroll
     $('.nav li').on('click', 'a', function(e) {
@@ -17,8 +17,26 @@ $(function() {
 
     });
 
+    // scroll Top button
+
+    $("#scroll-btn").click(function() {
+        $('body, html').animate({
+            scrollTop: '0'
+        },500);
+    });
+
+
     $(window).on('scroll', function() {
         let topScroll = $(window).scrollTop();
+
+
+        // scroll button
+
+        if(topScroll + $(window).height() > $('#pachage').offset().top) {
+            $("#scroll-btn").removeClass('hidden');
+        } else {
+            $("#scroll-btn").addClass('hidden');
+        }
 
         // clip path effect
 

@@ -1,4 +1,5 @@
 $(function() {
+	"use strict";
     let meterDiv = $('.scroll-meter');
     let scrollside = 0;
 
@@ -76,7 +77,7 @@ $(function() {
         //alert(hiddenArea);
         hiddenArea = hiddenArea/2;
         $('#right').click(function(){
-            alert(slide.outerWidth());
+
             slidesWrapper.css({transform: 'translate('+hiddenArea-slide.outerWidth()+'px,0)'});
         })
     });
